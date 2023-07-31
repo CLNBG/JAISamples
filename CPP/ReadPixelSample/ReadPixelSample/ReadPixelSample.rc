@@ -1,0 +1,218 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\ReadPixelSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ReadPixelSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_READPIXELSAMPLE_DIALOG DIALOGEX 0, 0, 358, 393
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ReadPixelSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera ID",IDC_STATIC,7,3,344,52
+    LTEXT           "Static",IDC_CAMERAID,14,14,330,35,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Camera Settings",IDC_STATIC,7,59,274,58,BS_FLAT
+    CTEXT           "Width",IDC_LBL_WIDTH,18,71,24,11
+    CONTROL         "",IDC_SLIDER_WIDTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,71,194,12
+    CTEXT           "Static",IDC_WIDTH,242,69,34,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "Height",IDC_LBL_HEIGHT,18,85,24,11
+    CONTROL         "",IDC_SLIDER_HEIGHT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,84,194,12
+    CTEXT           "Static",IDC_HEIGHT,242,83,34,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "Gain",IDC_LBL_GAIN,18,98,24,11
+    CONTROL         "",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,98,194,12
+    CTEXT           "Static",IDC_GAIN,242,97,34,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Acquisition",IDC_STATIC,286,59,65,58
+    PUSHBUTTON      "Start",IDC_START,294,73,50,16
+    PUSHBUTTON      "Stop",IDC_STOP,294,91,50,16
+    GROUPBOX        "View Window settings",IDC_STATIC,7,119,344,247
+    CONTROL         "Show View Window in Stretch mode (Window resize and Mouse Zoom is then possible)",IDC_STRETCHED_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,128,289,10
+    GROUPBOX        "View Window options",IDC_STATIC,11,140,339,220
+    GROUPBOX        "Mouse Cursor Control",IDC_STATIC,16,148,330,21
+    CONTROL         "Enable Zoom using Mouse Cursor",IDC_ENABLE_MOUSE_ZOOM_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,157,121,10
+    CONTROL         "Enable Mouse Cursor display",IDC_ENABLE_MOUSE_CURSOR_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,156,107,10
+    GROUPBOX        "Event Callback Control",IDC_STATIC,16,170,330,163
+    CONTROL         "View Window Move event",IDC_WINDOW_MOVE_EVENT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,179,98,10
+    CONTROL         "View Window Size event",IDC_WINDOW_SIZE_EVENT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,191,93,10
+    CONTROL         "Mouse Move event:",IDC_MOUSE_MOVE_EVENT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,203,79,10
+    LTEXT           "Pixel Value",IDC_VALUE_STATIC,107,202,234,12,0,WS_EX_CLIENTEDGE
+    CONTROL         "Left Mouse Button Down event",IDC_LBUTTON_DOWN_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,215,115,10
+    CONTROL         "Right Mouse Button Down event",IDC_RBUTTON_DOWN_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,215,119,10
+    CONTROL         "Left Mouse Button Up event",IDC_LBUTTON_UP_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,227,106,10
+    CONTROL         "Right Mouse Button Up event",IDC_RBUTTON_UP_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,227,110,10
+    CONTROL         "Zoom Position Change event",IDC_ZOOM_POS_EVENT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,239,107,10
+    LTEXT           "Last View Window Event:",IDC_EVENT_STATIC,21,305,320,24,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Exit",IDOK,154,370,50,16
+    CONTROL         "Area Selection event",IDC_AREA_EVENT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,251,83,10
+    CONTROL         "Image Overlay Draw event",IDC_USER_DRAW_IMAGE_EVENT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,266,103,10
+    CONTROL         "View Window Overlay Draw event",IDC_USER_DRAW_VIEW_WINDOW_EVENT_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,284,125,10
+    EDITTEXT        IDC_USER_DRAW_IMAGE_TEXT_EDIT,191,263,150,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_USER_DRAW_VIEW_WINDOW_TEXT_EDIT,191,282,150,14,ES_AUTOHSCROLL
+    CONTROL         "Enable Double-Buffering (Remove View Window Overlay Draw flickering but is slower!)",IDC_ENABLE_DOUBLE_BUFFERING_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,343,291,10
+    CONTROL         "Grid",IDC_USER_DRAW_IMAGE_GRID_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,266,29,10
+    CONTROL         "Grid",IDC_USER_DRAW_VIEW_WINDOW_GRID_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,284,29,10
+    GROUPBOX        "Double-Buffering Control",IDC_STATIC,16,333,330,23
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "JAI"
+            VALUE "FileDescription", "ReadPixelSample"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "ReadPixelSample.exe"
+            VALUE "LegalCopyright", "(c) JAI.  All rights reserved."
+            VALUE "OriginalFilename", "ReadPixelSample.exe"
+            VALUE "ProductName", "ReadPixelSample"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_READPIXELSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 386
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\ReadPixelSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

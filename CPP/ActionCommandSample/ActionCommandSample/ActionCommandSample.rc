@@ -1,0 +1,183 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\ActionCommandSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ActionCommandSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ACTIONCOMMANDSAMPLE_DIALOG DIALOGEX 0, 0, 326, 273
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ActionCommandSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_CAMERAID1,14,14,298,35,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Exit",IDOK,138,250,50,16
+    PUSHBUTTON      "Start Acquisition",IDC_START,15,97,80,16
+    PUSHBUTTON      "Stop Acquisition",IDC_STOP,98,97,80,16
+    GROUPBOX        "Acquisition",IDC_STATIC,7,88,312,28
+    GROUPBOX        "Camera ID",IDC_STATIC,7,3,312,85
+    GROUPBOX        "Action Command Test",IDC_STATIC,7,116,312,129
+    PUSHBUTTON      "Send Action 1 (Trigger)",IDC_ACTION1_BUTTON,197,126,115,14
+    PUSHBUTTON      "Send Action 2 (Timestamp reset)",IDC_ACTION2_BUTTON,197,143,115,14
+    LTEXT           "The camera is set-up so that 'Action 1' triggers the camera and 'Action 2' resets the timestamp to 0 ticks. The DeviceKey is set to 0x00000001\n\nAction 1:\nGroupKey=0x00000001\nGroupMask=0x00000001\n\nAction 2:\nGroupKey=0x00000002\nGroupMask=0x00000002",IDC_ACTION_INFO,14,126,179,93,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Timestamp (ticks)",IDC_STATIC,198,158,113,36
+    CTEXT           "No image recieved yet!",IDC_TIMESTAMP1_STATIC,205,167,99,8
+    LTEXT           "",IDC_STATUS_STATIC,14,226,298,14,0,WS_EX_CLIENTEDGE
+    CONTROL         "Request Acknowledges",IDC_REQ_ACK_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,200,196,90,10
+    EDITTEXT        IDC_ACK_COUNT_EDIT,271,207,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_ACK_COUNT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,299,207,11,14
+    LTEXT           "Max expected Ack's:",IDC_STATIC,200,210,67,8
+    CTEXT           "No image recieved yet!",IDC_TIMESTAMP2_STATIC,205,182,99,8
+    LTEXT           "Static",IDC_CAMERAID2,14,49,298,35,0,WS_EX_CLIENTEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "JAI"
+            VALUE "FileDescription", "ActionCommandSample"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "ActionCommandSample.exe"
+            VALUE "LegalCopyright", "(c) JAI.  All rights reserved."
+            VALUE "OriginalFilename", "ActionCommandSample.exe"
+            VALUE "ProductName", "ActionCommandSample"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ACTIONCOMMANDSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 266
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\ActionCommandSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

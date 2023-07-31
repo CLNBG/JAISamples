@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Danish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DAN)
+#ifdef _WIN32
+LANGUAGE LANG_DANISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SaveAndLoadSettingsSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SaveAndLoadSettingsSample Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_SAVEANDLOADSETTINGSSAMPLE_DIALOG DIALOGEX 0, 0, 326, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SaveAndLoadSettingsSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera ID",IDC_STATIC,7,3,312,52
+    LTEXT           "Camera ID",IDC_CAMERAID,14,14,298,35,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "J_Camera_SaveSettings() Flags",IDC_STATIC,7,56,256,29
+    COMBOBOX        IDC_SAVE_SETTINGS_COMBO,13,66,181,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save Settings",IDC_SAVE_SETTINGS_BUTTON,199,65,60,15
+    GROUPBOX        "J_Camera_LoadSettings() Flags",IDC_STATIC,7,86,256,29
+    COMBOBOX        IDC_LOAD_SETTINGS_COMBO,13,96,181,50,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Load Settings",IDC_LOAD_SETTINGS_BUTTON,199,95,60,15
+    DEFPUSHBUTTON   "OK",IDOK,269,59,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,269,78,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "SaveAndLoadSettingsSample.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "SaveAndLoadSettingsSample.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SAVEANDLOADSETTINGSSAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SAVEANDLOADSETTINGSSAMPLE_DIALOG DLGINIT
+BEGIN
+    IDC_SAVE_SETTINGS_COMBO, 0x403, 48, 0
+0x7541, 0x6f74, 0x203a, 0x6544, 0x6574, 0x7463, 0x5320, 0x7274, 0x6165, 
+0x616d, 0x6c62, 0x2065, 0x6c66, 0x6761, 0x2073, 0x6e61, 0x2064, 0x6173, 
+0x6576, 0x7320, 0x7465, 0x6974, 0x676e, 0x0073, 
+    IDC_SAVE_SETTINGS_COMBO, 0x403, 42, 0
+0x6153, 0x6576, 0x6f20, 0x6c6e, 0x2079, 0x6f6e, 0x6564, 0x2073, 0x6977, 
+0x6874, 0x5320, 0x7274, 0x6165, 0x616d, 0x6c62, 0x2065, 0x6c66, 0x6761, 
+0x2073, 0x6573, 0x0074, 
+    IDC_SAVE_SETTINGS_COMBO, 0x403, 28, 0
+0x6f46, 0x6372, 0x2065, 0x6c61, 0x206c, 0x6f6e, 0x6564, 0x2073, 0x6f74, 
+0x6220, 0x2065, 0x6173, 0x6576, 0x0064, 
+    IDC_LOAD_SETTINGS_COMBO, 0x403, 37, 0
+0x7541, 0x6f74, 0x203a, 0x6156, 0x696c, 0x6164, 0x6574, 0x7320, 0x7465, 
+0x6974, 0x676e, 0x2073, 0x6562, 0x6f66, 0x6572, 0x7720, 0x6972, 0x6574, 
+"\000" 
+    IDC_LOAD_SETTINGS_COMBO, 0x403, 40, 0
+0x6e4f, 0x796c, 0x7020, 0x7265, 0x6f66, 0x6d72, 0x5620, 0x6c61, 0x6469, 
+0x7461, 0x6f69, 0x206e, 0x666f, 0x6120, 0x6c6c, 0x7320, 0x7465, 0x6974, 
+0x676e, 0x0073, 
+    IDC_LOAD_SETTINGS_COMBO, 0x403, 52, 0
+0x6f46, 0x6372, 0x2065, 0x6c61, 0x206c, 0x6553, 0x7474, 0x6e69, 0x7367, 
+0x7420, 0x206f, 0x6562, 0x7720, 0x6972, 0x7474, 0x6e65, 0x7720, 0x7469, 
+0x6f68, 0x7475, 0x7620, 0x6c61, 0x6469, 0x7461, 0x6f69, 0x006e, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About SaveAndLoadSettingsSample..."
+END
+
+#endif    // Danish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DAN)\r\n"
+    "LANGUAGE 6, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\SaveAndLoadSettingsSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SaveAndLoadSettingsSample.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DAN)
+LANGUAGE 6, 1
+#pragma code_page(1252)
+#include "res\SaveAndLoadSettingsSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

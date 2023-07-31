@@ -1,0 +1,202 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\LensDistortionSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\LensDistortionSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LENSDISTORTIONSAMPLE_DIALOG DIALOGEX 0, 0, 326, 254
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "LensDistortionSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera ID",IDC_STATIC,7,3,312,52
+    LTEXT           "Static",IDC_CAMERAID,14,14,298,35,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Camera Settings",IDC_STATIC,7,59,222,58,BS_FLAT
+    CTEXT           "Width",IDC_LBL_WIDTH,18,71,24,11
+    CONTROL         "",IDC_SLIDER_WIDTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,71,140,12
+    CTEXT           "Static",IDC_WIDTH,185,69,34,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "Height",IDC_LBL_HEIGHT,18,85,24,11
+    CONTROL         "",IDC_SLIDER_HEIGHT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,84,140,12
+    CTEXT           "Static",IDC_HEIGHT,185,83,34,12,0,WS_EX_CLIENTEDGE
+    CTEXT           "Gain",IDC_LBL_GAIN,18,98,24,11
+    CONTROL         "",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,98,140,12
+    CTEXT           "Static",IDC_GAIN,185,97,34,12,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Lens Distortions Correction Parameters",IDC_STATIC,7,118,312,112
+    CONTROL         "Undistort",IDC_UNDISTORT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,128,45,10
+    LTEXT           "Optical center X:",IDC_STATIC,12,146,54,8
+    EDITTEXT        IDC_OPTICAL_CENTER_X_EDIT,78,143,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Optical center Y:",IDC_STATIC,12,163,54,8
+    EDITTEXT        IDC_OPTICAL_CENTER_Y_EDIT,78,160,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Focal Length X:",IDC_STATIC,12,180,50,8
+    EDITTEXT        IDC_FOCAL_LENGTH_X_EDIT,78,177,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Focal Length Y:",IDC_STATIC,12,197,50,8
+    EDITTEXT        IDC_FOCAL_LENGTH_Y_EDIT,78,194,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Radial distortion coefficient k1:",IDC_STATIC,141,129,100,8
+    EDITTEXT        IDC_K1_EDIT,265,126,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Radial distortion coefficient k2:",IDC_STATIC,141,146,100,8
+    EDITTEXT        IDC_K2_EDIT,265,143,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Radial distortion coefficient k3:",IDC_STATIC,141,163,100,8
+    EDITTEXT        IDC_K3_EDIT,265,160,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Tangential distortion coefficient p1:",IDC_STATIC,141,180,114,8
+    EDITTEXT        IDC_P1_EDIT,265,177,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Tangential distortion coefficient p2:",IDC_STATIC,141,197,114,8
+    EDITTEXT        IDC_P2_EDIT,265,194,50,14,ES_AUTOHSCROLL,WS_EX_RIGHT
+    CONTROL         "Use Bi-linear Interpolation",IDC_INTERPOLATION_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,213,99,10
+    PUSHBUTTON      "Apply",IDC_APPLY_BUTTON,138,211,50,14,WS_DISABLED
+    LTEXT           "Processing time (us):",IDC_STATIC,193,214,68,8
+    EDITTEXT        IDC_EDIT1,265,211,50,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_RIGHT
+    PUSHBUTTON      "Exit",IDOK,138,234,50,16
+    GROUPBOX        "Acquisition",IDC_STATIC,233,59,86,58
+    PUSHBUTTON      "Start",IDC_START,251,73,50,16
+    PUSHBUTTON      "Stop",IDC_STOP,251,91,50,16
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "JAI"
+            VALUE "FileDescription", "LensDistortionSample"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "LensDistortionSample.exe"
+            VALUE "LegalCopyright", "(c) JAI.  All rights reserved."
+            VALUE "OriginalFilename", "LensDistortionSample.exe"
+            VALUE "ProductName", "LensDistortionSample"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LENSDISTORTIONSAMPLE_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 253
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\LensDistortionSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

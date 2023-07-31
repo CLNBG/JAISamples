@@ -1,0 +1,273 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\HdrSequenceSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HdrSequenceSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HdrSequenceSample"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "HdrSequenceSample, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2009",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HDRSEQUENCESAMPLE_DIALOG DIALOGEX 0, 0, 930, 626
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "High Dynamic Range using Sequences"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera Connection",IDC_STATIC,1,0,296,24
+    EDITTEXT        IDC_CAMERA_EDIT,4,8,127,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SEARCH_BUTTON,133,8,35,14
+    PUSHBUTTON      "Open camera",IDC_OPEN_BUTTON,174,8,60,14
+    PUSHBUTTON      "Close camera",IDC_CLOSE_BUTTON,235,8,60,14
+    GROUPBOX        "Acquisition Control",IDC_STATIC,299,0,291,24
+    PUSHBUTTON      "Start Acquisition",IDC_START_ACQ_BUTTON,302,8,80,14
+    PUSHBUTTON      "Stop Acquisition",IDC_STOP_ACQ_BUTTON,383,8,80,14
+    PUSHBUTTON      "Trig",IDC_TRIG_BUTTON,469,8,50,14
+    CONTROL         "Auto Trigger",IDC_AUTOTRIG_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,525,10,52,10
+    GROUPBOX        "HDR Settings",IDC_STATIC,596,0,266,139
+    DEFPUSHBUTTON   "Force New Analysis",IDC_ANALYZE_BUTTON,602,9,254,19
+    LTEXT           "Dark image gain:",IDC_GAIN_STATIC,604,40,56,8
+    EDITTEXT        IDC_GAIN_EDIT,662,37,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_GAIN_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,702,37,10,14
+    LTEXT           "~ resolution =>",IDC_STATIC,719,40,52,8
+    EDITTEXT        IDC_RESOLUTION_EDIT,772,37,40,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "bits",IDC_STATIC,814,40,12,8
+    LTEXT           "Black Level 1:",IDC_STATIC,604,62,44,8
+    EDITTEXT        IDC_BLACK_LEVEL_EDIT1,662,59,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_BLACL_LEVEL_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,702,59,10,14
+    LTEXT           "Black Level 2:",IDC_STATIC,722,62,44,8
+    EDITTEXT        IDC_BLACK_LEVEL_EDIT2,772,59,50,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_BLACL_LEVEL_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,812,59,11,14
+    LTEXT           "HDR Execution Time:",IDC_PROCESSING_TIME_STATIC,605,83,125,8
+    GROUPBOX        "Dual-Slope gain",IDC_STATIC,599,100,259,35
+    EDITTEXT        IDC_DUALSLOPE_EDIT,604,115,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "0.0",IDC_STATIC,650,108,18,8
+    CONTROL         "",IDC_DUAL_SLOPE_SLIDER,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,650,115,204,14
+    CTEXT           "1.000",IDC_STATIC,835,108,18,8
+    GROUPBOX        "Camera Settings",IDC_STATIC,1,23,590,116
+    GROUPBOX        "Exposure 1",IDC_STATIC,3,30,425,52
+    LTEXT           "Exposure Time Raw:",IDC_STATIC,8,45,66,8
+    EDITTEXT        IDC_EXPOSURE_TIME1,77,43,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Min",IDC_MIN_STATIC1,121,35,25,8
+    CONTROL         "",IDC_EXPOSURE_TIME_SLIDER1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,124,43,296,14
+    CTEXT           "Max",IDC_MAX_STATIC1,398,35,25,8
+    GROUPBOX        "Exposure 2",IDC_STATIC,3,83,425,53
+    LTEXT           "Exposure Time Raw:",IDC_STATIC,8,97,66,8
+    EDITTEXT        IDC_EXPOSURE_TIME2,77,95,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Min",IDC_MIN_STATIC2,121,88,25,8
+    CONTROL         "",IDC_EXPOSURE_TIME_SLIDER2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,124,95,296,14
+    CTEXT           "Max",IDC_MAX_STATIC2,398,88,25,8
+    GROUPBOX        "Pixel Format",IDC_STATIC,433,30,153,27
+    COMBOBOX        IDC_PIXELFORMAT_COMBO,440,40,139,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save Current Sequence Settings",IDC_CHANGE_SEQUENCE_BUTTON,433,112,154,23,WS_DISABLED
+    PUSHBUTTON      "Exit",IDOK,866,3,60,23
+    CONTROL         "",IDC_IMAGE_1,"Static",SS_BLACKFRAME | SS_SUNKEN,7,149,301,228,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_IMAGE_2,"Static",SS_BLACKFRAME,3,390,305,228,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_IMAGE_3,"Static",SS_BLACKFRAME,317,160,608,459,WS_EX_CLIENTEDGE
+    CONTROL         "Logarithmic Output Conversion",IDC_LOG_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,318,149,115,10
+    GROUPBOX        "Brighter Image",IDC_STATIC,1,140,309,240
+    GROUPBOX        "Darker Image",IDC_STATIC,1,381,309,240
+    GROUPBOX        "HDR Image",IDC_STATIC,313,140,614,481
+    PUSHBUTTON      "Save as 16-bit Tiff image",IDC_SAVE_BUTTON,866,31,60,23,BS_MULTILINE
+    LTEXT           "Gain Raw:",IDC_STATIC,8,66,34,8
+    EDITTEXT        IDC_GAIN_EDIT1,77,65,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_GAIN_SLIDER1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,124,65,296,14
+    CTEXT           "Min",IDC_MIN_GAIN_STATIC1,121,58,25,8
+    CTEXT           "Max",IDC_MAX_GAIN_STATIC1,398,58,25,8
+    LTEXT           "Gain Raw:",IDC_STATIC,8,120,34,8
+    EDITTEXT        IDC_GAIN_EDIT2,77,117,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CTEXT           "Min",IDC_MIN_GAIN_STATIC2,122,110,25,8
+    CTEXT           "Max",IDC_MAX_GAIN_STATIC2,398,110,25,8
+    CONTROL         "",IDC_GAIN_SLIDER2,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,124,117,296,14
+    PUSHBUTTON      "Analyze White-Balance",IDC_WB_BUTTON,528,68,54,25,BS_MULTILINE | NOT WS_VISIBLE
+    GROUPBOX        "White-Balance Control",IDC_WB_STATIC,433,58,153,40,NOT WS_VISIBLE
+    EDITTEXT        IDC_RGAIN_EDIT,439,78,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_VISIBLE
+    CONTROL         "",IDC_RGAIN_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,467,78,11,14
+    EDITTEXT        IDC_BGAIN_EDIT,484,78,40,14,ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | NOT WS_VISIBLE
+    CONTROL         "",IDC_BGAIN_SPIN,"msctls_updown32",UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | NOT WS_VISIBLE,512,79,11,14
+    LTEXT           "R-Gain:",IDC_RGAIN_STATIC,440,67,25,8,NOT WS_VISIBLE
+    LTEXT           "B-Gain:",IDC_BGAIN_STATIC,485,67,24,8,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HdrSequenceSample.exe"
+            VALUE "LegalCopyright", "JAI Inc..  All rights reserved."
+            VALUE "OriginalFilename", "HdrSequenceSample.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HDRSEQUENCESAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 923
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 619
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About HdrSequenceSample..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\HdrSequenceSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,191 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\VCSampleMissingFrames.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VCSampleMissingFrames.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_VCSAMPLEMISSINGFRAMES_DIALOG DIALOGEX 0, 0, 320, 444
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VCSampleMissingFrames"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Start",IDC_STARTBUTTON,245,82,50,16,WS_DISABLED
+    PUSHBUTTON      "Exit",IDOK,133,396,50,16
+    LTEXT           "",IDC_CAMERAIDSTATIC,13,34,295,29
+    COMBOBOX        IDC_CAMLISTCOMBO,20,18,155,74,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Camera List and Camera ID",IDC_STATIC,7,5,306,68
+    CONTROL         "",IDC_WIDTHSLIDER,"msctls_trackbar32",TBS_BOTH | WS_DISABLED | WS_TABSTOP,32,88,146,12
+    LTEXT           "Width",IDC_WIDTHLABEL,12,94,20,8
+    LTEXT           "Static",IDC_WIDTHSTATIC,182,95,19,8
+    CONTROL         "",IDC_HEIGHTSLIDER,"msctls_trackbar32",TBS_BOTH | WS_DISABLED | WS_TABSTOP,32,108,146,12
+    LTEXT           "Height",IDC_HEIGHTLABEL,11,113,22,8
+    LTEXT           "Static",IDC_HEIGHTSTATIC,182,113,19,8
+    CONTROL         "",IDC_GAINSLIDER,"msctls_trackbar32",TBS_BOTH | WS_DISABLED | WS_TABSTOP,32,128,146,12
+    LTEXT           "Gain",IDC_GAINLABEL,16,132,15,8
+    LTEXT           "Static",IDC_GAINSTATIC,182,130,19,8
+    GROUPBOX        "Camera Settings",IDC_STATIC,7,76,203,88
+    PUSHBUTTON      "Stop",IDC_STOPBUTTON,245,103,50,14,WS_DISABLED
+    CONTROL         "",IDC_VIEWERPICTURECTRL,"Static",SS_BLACKFRAME,11,215,297,166
+    GROUPBOX        "Count Missing Frames",IDC_STATIC,7,168,86,25
+    GROUPBOX        "Count Frames with Missing Packets",IDC_STATIC,96,169,124,25
+    CTEXT           "0",IDC_MISSINGFRAMES_STATIC,29,179,58,8
+    CTEXT           "0/0",IDC_FMISSINGPACKETS_STATIC,125,181,68,8
+    GROUPBOX        "Image Viewer",IDC_STATIC,7,202,306,187
+    LTEXT           "Static",IDC_STATUSBARSTATIC,7,422,306,8
+    CONTROL         "Drop frames with missing packets",IDC_DROPFRAMESCHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,15,148,122,10
+    GROUPBOX        "Total Missing Packets",IDC_STATIC,225,169,87,25
+    CTEXT           "0",IDC_TTLMISSINGPACKETS_STATIC,241,181,58,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VCSampleMissingFrames.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "VCSampleMissingFrames.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_VCSAMPLEMISSINGFRAMES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 437
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\VCSampleMissingFrames.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

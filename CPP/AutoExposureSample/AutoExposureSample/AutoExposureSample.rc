@@ -1,0 +1,257 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\AutoExposureSample.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AutoExposureSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUTOEXPOSURESAMPLE_DIALOG DIALOGEX 0, 0, 358, 278
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Automatic Level Control"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Camera ID",IDC_STATIC,7,3,344,52
+    LTEXT           "Static",IDC_CAMERAID,14,14,330,35,0,WS_EX_CLIENTEDGE
+    GROUPBOX        "Camera Settings",IDC_STATIC,7,59,273,100,BS_FLAT
+    LTEXT           "Width:",IDC_LBL_WIDTH,12,73,24,11
+    CONTROL         "",IDC_SLIDER_WIDTH,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,70,190,16
+    LTEXT           "Height:",IDC_LBL_HEIGHT,12,95,24,11
+    CONTROL         "",IDC_SLIDER_HEIGHT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,45,92,190,16
+    LTEXT           "Gain:",IDC_LBL_GAIN,12,118,24,11
+    CONTROL         "",IDC_SLIDER_GAIN,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_ENABLESELRANGE | WS_TABSTOP,45,109,190,20
+    LTEXT           "Exposure:",IDC_LBL_EXPOSURE,12,142,33,11
+    CONTROL         "",IDC_SLIDER_EXPOSURE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_ENABLESELRANGE | WS_TABSTOP,45,133,190,20
+    GROUPBOX        "Automatic Level Control settings",IDC_STATIC,7,163,344,109
+    CONTROL         "Enable Auto Exposure",IDC_AUTOEXPOSURE_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,175,101,10
+    EDITTEXT        IDC_R_AVERAGE_EDIT,203,172,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE
+    CTEXT           "Setpoint",IDC_LBL_SETPOINT,11,206,33,11
+    CONTROL         "",IDC_SLIDER_SETPOINT,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | TBS_NOTICKS | WS_TABSTOP,45,203,192,16
+    EDITTEXT        IDC_SETPOINT,256,205,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "X-pos:",IDC_LBL_ROI_X,208,234,22,8
+    EDITTEXT        IDC_XPOS_EDIT,231,232,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    CONTROL         "",IDC_XPOS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,259,232,11,14
+    LTEXT           "Width:",IDC_LBL_ROI_WIDTH,277,234,22,8
+    EDITTEXT        IDC_WIDTH_EDIT,302,232,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    CONTROL         "",IDC_WIDTH_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,330,233,11,14
+    LTEXT           "Y-pos:",IDC_LBL_ROI_Y,207,252,22,8
+    EDITTEXT        IDC_YPOS_EDIT,231,250,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    CONTROL         "",IDC_YPOS_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,259,250,11,14
+    LTEXT           "Height:",IDC_LBL_ROI_HEIGHT,277,252,24,8
+    EDITTEXT        IDC_HEIGHT_EDIT,302,250,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN
+    CONTROL         "",IDC_HEIGHT_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,329,251,11,14
+    GROUPBOX        "Acquisition",IDC_STATIC,286,59,65,56
+    PUSHBUTTON      "Start",IDC_START,294,70,50,16
+    PUSHBUTTON      "Stop",IDC_STOP,294,92,50,16
+    PUSHBUTTON      "Exit",IDOK,293,120,50,16
+    GROUPBOX        "Measurement ROI",IDC_STATIC,203,222,143,47
+    EDITTEXT        IDC_MIN_GAIN_EDIT,60,232,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_MIN_GAIN_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,89,232,10,14
+    EDITTEXT        IDC_MAX_GAIN_EDIT,156,232,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_MAX_GAIN_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,184,232,11,14
+    EDITTEXT        IDC_MIN_EXPOSURE_EDIT,60,250,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_MIN_EXPOSURE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,88,250,11,14
+    EDITTEXT        IDC_MAX_EXPOSURE_EDIT,156,250,40,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_MAX_EXPOSURE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,184,250,11,14
+    GROUPBOX        "Gain and Exposure time limits",IDC_STATIC,10,222,190,47
+    LTEXT           "Min Gain:",IDC_LBL_MIN_GAIN,13,234,30,8
+    LTEXT           "Max Gain:",IDC_LBL_MAX_GAIN,105,234,33,8
+    LTEXT           "Min Exposure:",IDC_LBL_MIN_EXPOSURE,13,252,46,8
+    LTEXT           "Max Exposure:",IDC_LBL_MAX_EXPOSURE,105,252,49,8
+    EDITTEXT        IDC_IMAGE_WIDTH_EDIT,240,71,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_IMAGE_HEIGHT_EDIT,240,94,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_IMAGE_GAIN_EDIT,240,116,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_IMAGE_EXPOSURE_EDIT,240,140,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_ALC_MODE_COMBO,13,187,105,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_R_PEAK_EDIT,203,189,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE
+    CONTROL         "Peak: ->",IDC_PEAK_RADIO,"Button",BS_AUTORADIOBUTTON,125,189,44,10
+    CONTROL         "Average: ->",IDC_AVERAGE_RADIO,"Button",BS_AUTORADIOBUTTON,125,174,53,10
+    EDITTEXT        IDC_G_AVERAGE_EDIT,256,172,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_B_AVERAGE_EDIT,310,172,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_G_PEAK_EDIT,256,189,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    EDITTEXT        IDC_B_PEAK_EDIT,310,191,34,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,243,169,50,51
+    LTEXT           "B:",IDC_STATIC,300,174,8,8
+    LTEXT           "B:",IDC_STATIC,300,191,8,8
+    LTEXT           "G:",IDC_STATIC,246,174,8,8
+    LTEXT           "G:",IDC_STATIC,246,191,8,8
+    LTEXT           "R:",IDC_STATIC,193,174,8,8
+    LTEXT           "R:",IDC_STATIC,193,191,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "JAI"
+            VALUE "FileDescription", "AutoExposureSample"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "AutoExposureSample.exe"
+            VALUE "LegalCopyright", "(c) JAI.  All rights reserved."
+            VALUE "OriginalFilename", "AutoExposureSample.exe"
+            VALUE "ProductName", "AutoExposureSample"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_AUTOEXPOSURESAMPLE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_AUTOEXPOSURESAMPLE_DIALOG DLGINIT
+BEGIN
+    IDC_ALC_MODE_COMBO, 0x403, 22, 0
+0x694d, 0x696e, 0x756d, 0x206d, 0x6147, 0x6e69, 0x5020, 0x6972, 0x726f, 
+0x7469, 0x0079, 
+    IDC_ALC_MODE_COMBO, 0x403, 27, 0
+0x694d, 0x206e, 0x7845, 0x6f70, 0x7573, 0x6572, 0x5420, 0x6d69, 0x2065, 
+0x7250, 0x6f69, 0x6972, 0x7974, "\000" 
+    IDC_ALC_MODE_COMBO, 0x403, 14, 0
+0x6147, 0x6e69, 0x5020, 0x6972, 0x726f, 0x7469, 0x0079, 
+    IDC_ALC_MODE_COMBO, 0x403, 23, 0
+0x7845, 0x6f70, 0x7573, 0x6572, 0x5420, 0x6d69, 0x2065, 0x7250, 0x6f69, 
+0x6972, 0x7974, "\000" 
+    IDC_ALC_MODE_COMBO, 0x403, 10, 0
+0x6147, 0x6e69, 0x4f20, 0x6c6e, 0x0079, 
+    IDC_ALC_MODE_COMBO, 0x403, 19, 0
+0x7845, 0x6f70, 0x7573, 0x6572, 0x5420, 0x6d69, 0x2065, 0x6e4f, 0x796c, 
+"\000" 
+    0
+END
+
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\AutoExposureSample.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
